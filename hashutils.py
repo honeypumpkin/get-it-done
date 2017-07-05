@@ -11,7 +11,7 @@ def make_pw_hash(password, salt=None):
     if not salt:
         salt = make_salt()
     str_to_hash = password + salt
-    return hashlib.sha256(str_to_hash()).hexdigest() + ',' + salt
+    return hashlib.sha256(str.str_to_hash()).hexdigest() + ',' + salt
 
 
 def check_pw_hash(password, hash):
